@@ -8,7 +8,6 @@
 
 namespace Ganodermaking\SmallProgram;
 
-
 class SmallProgramServiceProvider
 {
     /**
@@ -34,7 +33,7 @@ class SmallProgramServiceProvider
         );
         $this->app->singleton('small-program', function ($app) {
             $config = $app->make('small-program');
-            new TouTiaoService($config);
+            new SmallProgramService($config);
         });
     }
 
