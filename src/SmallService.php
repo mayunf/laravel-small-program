@@ -9,7 +9,7 @@
 namespace Ganodermaking\SmallProgram;
 
 
-class SmallProgramService
+class SmallService
 {
     public $config;
 

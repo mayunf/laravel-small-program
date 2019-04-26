@@ -8,7 +8,7 @@
 
 namespace Ganodermaking\SmallProgram;
 
-class SmallProgramServiceProvider
+class SmallServiceProvider
 {
     /**
      * 在注册后进行服务的启动。
@@ -18,7 +18,7 @@ class SmallProgramServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__ . '/../config/small-program.php' => config_path('small-program.php'),
+            __DIR__ . '/../config/small.php' => config_path('small.php'),
         ]);
     }
 
@@ -29,16 +29,16 @@ class SmallProgramServiceProvider
      */
     public function register() {
         $this->mergeConfigFrom(
-            __DIR__ . '/../config/small-program.php', 'small-program'
+            __DIR__ . '/../config/small.php', 'small'
         );
-        $this->app->singleton('small-program', function ($app) {
-            $config = $app->make('small-program');
-            new SmallProgramService($config);
+        $this->app->singleton('small', function ($app) {
+            $config = $app->make('small');
+            new SmallService($config);
         });
     }
 
     public function provides()
     {
-        return ['small-program'];
+        return ['small'];
     }
 }
