@@ -1,11 +1,17 @@
 # laravel-small-program
-laravel多平台小程序核心接口封装
+Laravel Core Interface Packaging of Multi-Platform Small Programs
 
-# 调用
+# Installation
 ```php
 composer require ganodermaking/laravel-small-program
+```
 
+# Configuration Publishing
+```php
 php artisan vendor:publish --provider="Ganodermaking\\LaravelSmallProgram\\SmallProgramServiceProvider"
+```
 
+# Usage
+```php
 app('small-program')->toutiao->loginCertificateVerify($code, $anonymousCode);
 ```
