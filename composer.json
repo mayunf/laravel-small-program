@@ -1,6 +1,6 @@
 {
-    "name": "ganodermaki/small-program-toutiao",
-    "description": "toutiao small program library",
+    "name": "ganodermaki/laravel-small-program",
+    "description": "laravel small program library",
     "type": "library",
     "license": "MIT",
     "authors": [
