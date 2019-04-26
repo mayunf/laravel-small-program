@@ -13,19 +13,11 @@ use Ganodermaking\LaravelSmallProgram\TouTiao\TouTiaoService;
 class SmallProgramService
 {
     public $config;
+    public $toutiao;
 
-    public function __construct($config)
+    public function __construct($config = null)
     {
         $this->config = $config;
-    }
-
-    /**
-     * 今日头条
-     *
-     * @return void
-     */
-    public function toutiao()
-    {
-        return new TouTiaoService($this->config);
+        $this->toutiao = new TouTiaoService($this->config);
     }
 }

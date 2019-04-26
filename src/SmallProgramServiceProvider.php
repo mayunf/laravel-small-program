@@ -8,7 +8,9 @@
 
 namespace Ganodermaking\LaravelSmallProgram;
 
-class SmallProgramServiceProvider
+use Illuminate\Support\ServiceProvider;
+
+class SmallProgramServiceProvider extends ServiceProvider
 {
     /**
      * 在注册后进行服务的启动。
@@ -31,14 +33,8 @@ class SmallProgramServiceProvider
         $this->mergeConfigFrom(
             __DIR__ . '/../config/small-program.php', 'small-program'
         );
-        $this->app->singleton('small-program', function ($app) {
-            $config = $app->make('small-program');
-            new SmallProgramService($config);
+        $this->app->singleton('small-program', function () {
+            return new SmallProgramService(config('small-program'));
         });
-    }
-
-    public function provides()
-    {
-        return ['small-program'];
     }
 }
