@@ -1,0 +1,39 @@
+{
+    "name": "ganodermaki/small-program-toutiao",
+    "description": "toutiao small program library",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ganodermaking",
+            "email": "505557473@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "guzzlehttp/guzzle": "^6.3@dev"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ganodermaking\\LaravelSmallProgram\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ganodermaking\\LaravelSmallProgram\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ganodermaking\\LaravelSmallProgram\\SmallProgramServiceProvider"
+            ],
+            "aliases": {
+                "small-program": "Ganodermaking\\LaravelSmallProgram\\SmallProgramFacade"
+            }
+        }
+    }
+}
