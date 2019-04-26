@@ -29,7 +29,7 @@ class SmallProgramServiceProvider
      */
     public function register() {
         $this->mergeConfigFrom(
-            __DIR__ . '/../config/small-program.php', 'small'
+            __DIR__ . '/../config/small-program.php', 'small-program'
         );
         $this->app->singleton('small-program', function ($app) {
             $config = $app->make('small-program');

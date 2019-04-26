@@ -8,6 +8,7 @@
 
 namespace Ganodermaking\LaravelSmallProgram;
 
+use Ganodermaking\LaravelSmallProgram\TouTiao\TouTiaoService;
 
 class SmallProgramService
 {
