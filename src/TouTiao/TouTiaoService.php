@@ -64,9 +64,11 @@ class TouTiaoService
                 ];
             }
         } catch (GuzzleException $exception) {
+            $data = json_decode($res, true);
             return [
                 'code' => -1,
-                'msg' => '请求失败',
+                'msg' => $exception->getMessage(),
+                'data' => $data
             ];
         }
     }
@@ -100,7 +102,7 @@ class TouTiaoService
             $data = json_decode($res, true);
             return [
                 'code' => -1,
-                'msg' => '请求失败',
+                'msg' => $exception->getMessage(),
                 'data' => $data
             ];
         }
