@@ -6,7 +6,7 @@
  * Time: 12:39
  */
 
-namespace Ganodermaking\SmallProgram;
+namespace Ganodermaking\Small\TouTiao;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\GuzzleException;

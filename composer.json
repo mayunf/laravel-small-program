@@ -18,21 +18,21 @@
     },
     "autoload": {
         "psr-4": {
-            "Ganodermaking\\LaravelSmallProgram\\": "src/"
+            "Ganodermaking\\LaravelSmall\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Ganodermaking\\LaravelSmallProgram\\Tests\\": "tests/"
+            "Ganodermaking\\LaravelSmall\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Ganodermaking\\LaravelSmallProgram\\SmallProgramServiceProvider"
+                "Ganodermaking\\LaravelSmall\\SmallServiceProvider"
             ],
             "aliases": {
-                "small-program": "Ganodermaking\\LaravelSmallProgram\\SmallProgramFacade"
+                "small-program": "Ganodermaking\\LaravelSmall\\SmallFacade"
             }
         }
     }

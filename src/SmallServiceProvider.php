@@ -6,7 +6,7 @@
  * Time: 15:08
  */
 
-namespace Ganodermaking\SmallProgram;
+namespace Ganodermaking\Small;
 
 class SmallServiceProvider
 {

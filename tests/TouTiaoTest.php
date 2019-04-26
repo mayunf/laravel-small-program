@@ -6,17 +6,17 @@
  * Time: 14:51
  */
 
-namespace Ganodermaking\SmallProgram\Tests;
+namespace Ganodermaking\Small\Tests;
 
+use Ganodermaking\Small\TouTiao\TouTiaoService;
 use PHPUnit\Framework\TestCase;
-use Ganodermaking\SmallProgram\TouTiao;
 
 class TouTiaoTest extends TestCase
 {
     public function testLoginCertificateVerify()
     {
-        $toutiao = new TouTiao();
-        $res = $toutiao->loginCertificateVerify('', '');
+        $touTiaoService = new TouTiaoService();
+        $res = $touTiaoService->loginCertificateVerify('', '');
         $this->assertEquals(0, $res['code']);
     }
 }
