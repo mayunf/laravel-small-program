@@ -6,10 +6,10 @@
  * Time: 15:08
  */
 
-namespace Ganodermaking\Small;
+namespace Ganodermaking\LaravelSmallProgram;
 
 
-class SmallService
+class SmallProgramService
 {
     public $config;
 

@@ -6,16 +6,16 @@
  * Time: 14:51
  */
 
-namespace Ganodermaking\Small\Tests;
+namespace Ganodermaking\LaravelSmallProgram\Tests;
 
-use Ganodermaking\Small\TouTiao\TouTiaoService;
+use Ganodermaking\LaravelSmallProgram\TouTiao\TouTiaoService;
 use PHPUnit\Framework\TestCase;
 
 class TouTiaoTest extends TestCase
 {
     public function testLoginCertificateVerify()
     {
-        $touTiaoService = new TouTiaoService();
+        $touTiaoService = new TouTiaoService($config = array());
         $res = $touTiaoService->loginCertificateVerify('', '');
         $this->assertEquals(0, $res['code']);
     }

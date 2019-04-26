@@ -1,5 +1,5 @@
 {
-    "name": "ganodermaki/laravel-small",
+    "name": "Ganodermaking/laravel-small-program",
     "description": "laravel small program library",
     "type": "library",
     "license": "MIT",
@@ -18,21 +18,21 @@
     },
     "autoload": {
         "psr-4": {
-            "Ganodermaking\\LaravelSmall\\": "src/"
+            "Ganodermaking\\LaravelSmallProgram\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Ganodermaking\\LaravelSmall\\Tests\\": "tests/"
+            "Ganodermaking\\LaravelSmallProgram\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Ganodermaking\\LaravelSmall\\SmallServiceProvider"
+                "Ganodermaking\\LaravelSmallProgram\\SmallProgramServiceProvider"
             ],
             "aliases": {
-                "small-program": "Ganodermaking\\LaravelSmall\\SmallFacade"
+                "small-program": "LaravelSmallProgram\\SmallProgramFacade"
             }
         }
     }

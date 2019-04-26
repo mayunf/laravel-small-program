@@ -6,7 +6,7 @@
  * Time: 12:39
  */
 
-namespace Ganodermaking\Small\TouTiao;
+namespace Ganodermaking\LaravelSmallProgram\TouTiao;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\GuzzleException;
